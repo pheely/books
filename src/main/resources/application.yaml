@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: redis-cluster-app
+  data:
+    redis:
+      cluster:
+        nodes: 10.0.0.5:6379
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
